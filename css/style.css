@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+/* variables*/
+:root{
+    --header-height: 3.5rem;
+    /*Colores*/
+    --hue: 14;
+    --first-color: hsl(var(--hue), 91%, 54%);
+    --first-color-alt: hsl(var(--hue), 91%, 50%);
+    --title-color: hsl(var(--hue), 4%, 100%);
+    --text-color: hsl(var(--hue), 4%, 95%);
+    --text-color-light: hsl(var(--hue), 4%, 55%);
+    /* green gradient*/
+    --body-color: linear-gradient(90deg, hsl(23, 84%, 75%) 0%, hsl(9, 92%, 54%) 100%);
+    --container-color: linear-gradient(136deg, hsl(120, 1%, 15%) 0%, hsl(0, 0%, 3%) 100%);
+    /*font and typography*/
+    --boddy-font: 'Poppins', sans-serif;
+    --biggest-font-size: 2rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;
+    /*font weight*/
+    --font-medium: 500;
+    --font-semi-bold: 600;
+    --font-black: 900;
+    /*margenes bottom*/
+    --mb-0-25: .25rem;
+    --mb-0-5: .5rem;
+    --mb-0-75: .75rem;
+    --mb-1: 1rem;
+    --mb-1-5: 1.5rem;
+    --mb-2: 2rem;
+    --mb-2-5:2.5rem;
+    /*z index*/
+    --z-tooltip: 10;
+    --z-fixed: 100;
+}
+/*responsive typography*/
+@media screen and (min-width: 992px){
+    :root{
+        --biggest-font-size: 4rem;
+        --h1-font-size: 2.25rem;
+        --h2-font-size: 1.5rem;
+        --h3-font-size: 1.25rem;
+        --normal-font-size: 1rem;
+        --small-font-size: .875rem;
+        --smaller-font-size: .813rem;
+    }
+}
+/*base*/
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: var(--header-height) 0 0 0;
+    font-family: var(--boddy-font);
+    font-size: var(--normal-font-size);
+    background: var(--body-color);
+    color: var(--text-color);
+}
+h1,h2,h3,h4{
+    color: var(--text-color);
+    font-weight: var(--font-semi-bold);
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+input{
+    border: none;
+    outline: none;
+}
