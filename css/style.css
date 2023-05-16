@@ -83,3 +83,8 @@ input{
     border: none;
     outline: none;
 }
+button{
+    cursor: pointer;
+    font-family: var(--boddy-font);
+    font-size: var(--normal-font-size);
+}
